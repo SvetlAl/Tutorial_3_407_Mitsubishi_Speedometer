@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"4071\startup_stm32f407xx.o"
+"4071\main.o"
+"4071\stm32f4xx_it.o"
+"4071\stm32f4xx_hal_msp.o"
+"4071\stm32f4xx_hal_can.o"
+"4071\stm32f4xx_hal_rcc.o"
+"4071\stm32f4xx_hal_rcc_ex.o"
+"4071\stm32f4xx_hal_flash.o"
+"4071\stm32f4xx_hal_flash_ex.o"
+"4071\stm32f4xx_hal_flash_ramfunc.o"
+"4071\stm32f4xx_hal_gpio.o"
+"4071\stm32f4xx_hal_dma_ex.o"
+"4071\stm32f4xx_hal_dma.o"
+"4071\stm32f4xx_hal_pwr.o"
+"4071\stm32f4xx_hal_pwr_ex.o"
+"4071\stm32f4xx_hal_cortex.o"
+"4071\stm32f4xx_hal.o"
+"4071\stm32f4xx_hal_exti.o"
+"4071\stm32f4xx_hal_tim.o"
+"4071\stm32f4xx_hal_tim_ex.o"
+"4071\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "4071\4071.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "4071.map" -o 4071\4071.axf
